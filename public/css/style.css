@@ -22,12 +22,21 @@ body {
     line-height: 1.5;
 }
 header {
+    display: flex;
     background: var(--brand);
     color: #fff;
     padding: 1.25rem 1.5rem;
 }
+.header-text {
+    margin-left: 1rem;
+}
 header h1 { margin: 0; font-size: 1.4rem; }
 header p { margin: .15rem 0 0; opacity: .85; font-size: .95rem; }
+.logo {
+  width: 80px;       /* Standard desktop logo width is between 100px and 200px */
+  height: auto;       /* Keeps the original aspect ratio */
+  object-fit: contain; /* Ensures the image fits perfectly inside its boundaries */
+}
 main {
     max-width: 1000px;
     margin: 0 auto;
@@ -35,6 +44,7 @@ main {
     display: grid;
     gap: 1.25rem;
 }
+
 section {
     background: var(--panel);
     border: 1px solid var(--line);
