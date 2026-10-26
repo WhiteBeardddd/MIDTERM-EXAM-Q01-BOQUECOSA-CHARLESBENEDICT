@@ -1,0 +1,33 @@
+[
+  {
+    "id": 1,
+    "title": "Midterm Exam Schedule Released",
+    "message": "The midterm schedule is now posted on the department bulletin board.",
+    "date_posted": "2026-10-20",
+    "expiry_date": "2026-11-05",
+    "category": "Academic"
+  },
+  {
+    "id": 2,
+    "title": "Library Closed for Maintenance",
+    "message": "The main library will be closed for one day for maintenance.",
+    "date_posted": "2026-09-01",
+    "expiry_date": "2026-09-02",
+    "category": "Facilities"
+  },
+  {
+    "id": 3,
+    "title": "No Class Today",
+    "message": "No class today due to a public holiday.",
+    "date_posted": "2026-10-26",
+    "expiry_date": "2026-10-27",
+    "category": "General"
+  },{
+    "id": 4,
+    "title": "Graduating Students - Academic Year 2026-2027",
+    "message": "Attention Graduation students! Please submit your requirements to the registrar's office before the deadline.",
+    "date_posted": "2026-10-26",
+    "expiry_date": "2026-10-27",
+    "category": "General"
+  }
+]

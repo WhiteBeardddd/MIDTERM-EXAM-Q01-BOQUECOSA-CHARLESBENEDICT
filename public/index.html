@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Campus Announcements</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Campus Announcement System</h1>
+    <p>Post, find, and remove campus announcements.</p>
+  </header>
+
+  <main>
+    <!-- Add -->
+    <section aria-labelledby="add-h">
+      <h2 id="add-h">Add an announcement</h2>
+      <div class="field">
+        <label for="title">Title</label>
+        <input id="title" type="text" placeholder="e.g. Library closed on Friday" />
+      </div>
+      <div class="field">
+        <label for="message">Message</label>
+        <textarea id="message" placeholder="Write the announcement…"></textarea>
+      </div>
+      <div class="grid-2">
+        <div class="field">
+          <label for="date_posted">Date posted</label>
+          <input id="date_posted" type="date" />
+        </div>
+        <div class="field">
+          <label for="expiry_date">Expiry date</label>
+          <input id="expiry_date" type="date" />
+        </div>
+      </div>
+      <div class="field">
+        <label for="category">Category</label>
+        <select id="category">
+          <option>General</option>
+          <option>Academic</option>
+          <option>Events</option>
+          <option>Facilities</option>
+          <option>Emergency</option>
+        </select>
+      </div>
+      <button id="addBtn">Post announcement</button>
+      <div id="addMsg" class="msg" role="status"></div>
+    </section>
+
+    <!-- Search by ID -->
+    <section aria-labelledby="find-h">
+      <h2 id="find-h">Find by ID</h2>
+      <div class="row">
+        <div class="grow">
+          <label for="searchId">Announcement ID</label>
+          <input id="searchId" type="number" min="1" placeholder="e.g. 1" />
+        </div>
+        <button id="findBtn">Search</button>
+        <button id="clearBtn" class="secondary">Clear</button>
+      </div>
+      <div id="findMsg" class="msg" role="status"></div>
+      <div id="findResult" style="margin-top:.75rem"></div>
+    </section>
+
+    <!-- All -->
+    <section aria-labelledby="all-h">
+      <div class="row" style="justify-content: space-between; align-items:center; margin-bottom:.9rem">
+        <h2 id="all-h" style="margin:0">All announcements</h2>
+        <button id="refreshBtn" class="secondary">Refresh</button>
+      </div>
+      <div id="list"></div>
+      <div id="listMsg" class="msg" role="status"></div>
+    </section>
+  </main>
+</body>
+</html>
